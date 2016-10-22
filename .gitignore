@@ -6,6 +6,9 @@
 *.exe
 *.o
 *.so
+*.pyo
+*.pyc
+*~
 
 # Packages #
 ############
@@ -36,8 +39,7 @@
 ehthumbs.db
 Thumbs.db
 
+__pycache__/
+
 #added these compiled and temporary files creatred by the editor. Suggested in comments in octocat example #
 
-*.pyo
-*.pyc
-*~
