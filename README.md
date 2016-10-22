@@ -10,7 +10,7 @@ In the intial days i'll be using the README.md page as a indication of what i am
 
 
 #### Phase 1
-- [ ] Gather information from various sources convert them into simple *.txt* 
+- [x] Gather information from various sources convert them into simple *.txt* 
   - [ ] Save data into JSON for easy usage among files ahead (TBD if required)
 - [ ] Simplify he complex and compund statements
 - [ ] Study the *NLP parser* and simply the complex and compund statements
