@@ -5,7 +5,8 @@ import argparse
 from bcolors import *
 
 #get the complete path of curr directory's parent dir
-CURR_DIR = (os.path.dirname(os.path.abspath(__file__)))
+parent_dir = (os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CURR_DIR = os.path.join(parent_dir,'data')
 
 def wiki_to_txt(titles) :
     #NOT DONE : check if wiki_files directory exists
