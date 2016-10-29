@@ -6,6 +6,8 @@ from bcolors import *
 
 #get the complete path of curr directory's parent dir
 CURR_DIR = (os.path.dirname(os.path.abspath(__file__)))
+CURR_DIR = CURR_DIR[:-CURR_DIR[::-1].index("/")]
+CURR_DIR += "data"
 
 def wiki_to_txt(titles) :
     #NOT DONE : check if wiki_files directory exists
