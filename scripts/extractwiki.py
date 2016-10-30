@@ -6,13 +6,14 @@ from bcolors import *
 
 #get the complete path of curr directory's parent dir
 CURR_DIR = (os.path.dirname(os.path.abspath(__file__)))
+MOD_DIR = "/../data"
 
 def wiki_to_txt(titles) :
     #NOT DONE : check if wiki_files directory exists
     for title in titles:
         try :
             page = wikipedia.WikipediaPage(title)
-            f = open(CURR_DIR+ '/wiki_files/' + title ,'w')
+            f = open(CURR_DIR+ MOD_DIR + '/wiki_files/' + title ,'w')
             f.write("== Summary ==\n")
             f.write(page.content);
             f.close();
@@ -27,7 +28,7 @@ def wiki_to_txt(titles) :
 #generate list of all titles
 def genlist(title_list):
     print (bcolors.OKGREEN + "Generated title list" + bcolors.ENDC)
-    titles = [ title.rstrip('\n') for title in open(CURR_DIR + "/" + title_list)]
+    titles = [ title.rstrip('\n') for title in open(CURR_DIR + MOD_DIR + "/" + title_list)]
     return titles
 
 #get the filename containing all titles from the argument passed
